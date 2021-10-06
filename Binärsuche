@@ -1,7 +1,8 @@
 class BinarySearch {
+
+// REKURSIV:
     
-    // Returns index of x if it is present in arr[l..
-    // r], else return -1
+
     int binarySearch(int arr[], int l, int r, int x)
     {
         if (r >= l) {
@@ -23,12 +24,14 @@ class BinarySearch {
         }
   
         // We reach here when element is not present
-        // in array
+        // in array (-1 is returned)
         return -1;
     }
     
-    // Returns index of x if it is present in arr[],
-    // else return -1
+    
+// ITERATIV:
+
+ 
     int binarySearch(int arr[], int x)
     {
         int l = 0, r = arr.length - 1;
@@ -49,6 +52,6 @@ class BinarySearch {
         }
   
         // if we reach here, then element was
-        // not present
+        // not present (-1 is returned)
         return -1;
     }
