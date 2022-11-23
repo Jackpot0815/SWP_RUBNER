@@ -143,19 +143,19 @@ def main():
         if check_pair(hand) != 0:
             statdc["Paar"] += 1
 
-        elif check_triple(hand) != 0:
+        elif check_triple(hand):
             statdc["Drilling"] += 1
 
-        elif check_quads(hand) != 0:
+        elif check_quads(hand):
             statdc["Vierling"] += 1
 
-        elif check_straight(hand) != 0:
+        elif check_straight(hand):
             statdc["Straße"] += 1
 
-        elif check_flush(hand) != 0:
+        elif check_flush(hand):
             statdc["Flush"] += 1
 
-        elif check_royalf(hand) != 0:
+        elif check_royalf(hand):
             statdc["Royal Flush"] += 1
 
         else:
